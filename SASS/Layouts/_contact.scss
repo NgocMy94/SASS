@@ -1,0 +1,36 @@
+.conTact{
+    background-image: url("../../img/accent_bottom_wave_01.png");
+    background-position: bottom center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .contact__Form{
+        width: 70%;
+        border: 1px solid $color-white;
+        box-shadow: 0px 8px 14px 0px;
+        margin-top: $pd-3;
+        background-color: white;
+        border-radius: $pd-5;
+        h1{
+            padding:$pd-8 0px ;
+            text-align: center;
+
+        }
+    }
+    form{
+        input{
+            padding-left: $pd-1;
+        }
+        padding-bottom: $pd-4;
+       .name{
+           margin: 0px $pd-7;
+       }
+       .engLish{
+        margin: $pd-1 $pd-7;
+           width: 90%;
+       }
+       textarea{
+           margin: $pd-1 $pd-7;
+           width: 90%;
+       }
+    }
+}

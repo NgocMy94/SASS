@@ -1,0 +1,37 @@
+.btn__Phone{
+    @include styleButton($color-violet,$pd-5,$pd-8,1px solid $color-text-1);
+    @include styleText($fs-8,$fw-2,$color-white);
+    transition: 0.5s;
+    &:hover{
+        @include styleHoverButton($color-violet,$color-violet,$color-white);
+    };
+}
+.btnSend{
+    @include styleButton($color-violet,$pd-5,$pd-8,1px solid $color-text-1);
+    @include styleText($fs-8,$fw-2,$color-white);
+    transition: 0.5s;
+    &:hover{
+        @include styleHoverButton($color-violet,$color-violet,$color-white);
+    };
+    margin-left: $pd-7;
+}
+.btn__FooterEmail{
+    @include styleButton($color-violet,$pd-1,$pd-4,1px solid $color-white);
+    @include styleText($fs-8,$fw-2,$color-white);
+    transition: 0.5s;
+    margin-bottom: $pd-2;
+    &:hover{
+        @include styleHoverButton($color-violet,$color-violet,$color-white);
+    };
+    
+}
+.btn__FooterSub{
+    @include styleButton($color-white,$pd-1,$pd-4,1px solid );
+    @include styleText($fs-8,$fw-2,$color-text-2);
+    transition: 0.5s;
+    margin-bottom: $pd-2;
+    &:hover{
+        @include styleHoverButton($color-white,$color-white,$color-violet);
+    };
+    
+}

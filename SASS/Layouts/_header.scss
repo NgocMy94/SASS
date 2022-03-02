@@ -1,0 +1,47 @@
+header{
+    .yellow_top{
+    background-image: url("../../img/yellow_top_wave_01.png");
+    background-position: center top ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: $pd-6;
+    }
+}
+.headerHome{
+    
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    .navbar-nav{
+        .nav-link{
+            @include styleText($fs-9,$fw-2,$color-text-1);
+            padding-right: $pd-3;
+            transition: 0.2s;
+            &:hover{
+                color: $color-violet;
+            }
+            
+        }
+        
+    }
+    .icon__Header{
+        i{
+            @include styleText($fs-8,$fw-2,$color-text-1);
+            padding: 0px $pd-5;
+            transition: 0.5s;
+            &:hover{
+                color: $color-violet;
+            }
+        }
+    }
+}
+
+@include responsive("large"){
+    .headerHome{
+        
+        .navbar-nav{
+            text-align: center;
+            padding: $pd-5;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.inFo{
+    background-image: url("../../img/Violet_top_left_wave.png");
+    background-position:   top left;
+    background-repeat: repeat;
+    background-size: cover;
+    .content__Info{
+        padding-top: $pd-6;
+        padding-bottom: $pd-3;
+    }
+    .card{
+        transition: 0.5s;
+        &:hover{
+            box-shadow: 0px 8px 14px 0px;
+        }
+        .card-body{
+            text-align: center;
+            h5{
+                @include styleText($fs-3,$fw-2,$color-violet);
+            }
+            h3{
+                @include styleText($fs-4,$fw-3,$color-text-3);
+            }
+            p{
+                @include styleText($fs-5,$fw-1,$color-text-1);
+            }
+
+        }
+
+    }
+}

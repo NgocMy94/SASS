@@ -1,0 +1,38 @@
+footer{
+    background-image: url("../../img/footer_background.jpg");
+    background-position:   center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: $pd-9 0px;
+    .footer__Conten{
+        h5{
+           @include styleText ($fs-4,$fw-3,$color-white);
+           padding-bottom: $pd-2
+        }
+        span{
+            
+            @include styleText ($fs-8,$fw-1,$color-white);
+            
+            display: block;
+            i{
+                padding-right: $pd-5;
+            }
+        }
+        h6{
+            @include styleText ($fs-8,$fw-1,$color-white);
+            padding: $pd-5 0px;
+            border-bottom: 1px solid $color-text-2;
+            
+        }
+        .icon__Footer{
+           i{
+            @include styleText($fs-8,$fw-2,$color-white);
+            padding-right: $pd-5;
+            transition: 0.5s;
+            &:hover{
+                color: $color-text-1;
+            }
+           }
+        }
+    }
+}
